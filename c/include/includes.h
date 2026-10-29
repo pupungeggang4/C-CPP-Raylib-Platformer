@@ -9,6 +9,6 @@
 #include <raylib.h>
 #include <raymath.h>
 
-enum SceneName {TITLE, EDIT, RUN}
+enum SceneName {TITLE, EDIT, RUN};
 
 #endif
