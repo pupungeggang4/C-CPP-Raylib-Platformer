@@ -1,1 +1,1 @@
-# C-CPP-Raylib-Platformer-Mechanics
+# C-CPP-Raylib-Platformer
