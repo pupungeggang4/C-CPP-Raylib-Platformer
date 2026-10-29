@@ -11,4 +11,6 @@
 
 enum SceneName {TITLE, EDIT, RUN};
 
+typedef struct GameVar GameVar;
+
 #endif
