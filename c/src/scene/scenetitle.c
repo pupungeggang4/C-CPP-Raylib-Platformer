@@ -24,6 +24,7 @@ void sceneTitleKeyDown(GameVar* gameVar) {
 
 void sceneTitleMouseUp(GameVar* gameVar, Vector2 pos, int button) {
     if (button == LEFT) {
+        if (utilPointInsideRectUI(pos, uiTitle.buttonEdit)) sceneChange(gameVar, EDIT);
         if (utilPointInsideRectUI(pos, uiTitle.buttonQuit)) gameVar->running = 0;
     }
 }
