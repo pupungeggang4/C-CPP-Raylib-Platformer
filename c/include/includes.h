@@ -10,7 +10,11 @@
 #include <raymath.h>
 
 enum SceneName {TITLE, EDIT, RUN};
+enum Direction {LEFT, RIGHT, UP, DOWN};
 
+typedef struct UITitle UITitle;
+typedef struct UIEdit UIEdit;
+typedef struct UIRun UIRun;
 typedef struct GameVar GameVar;
 
 #endif

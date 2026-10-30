@@ -5,6 +5,7 @@
 
 struct GameVar {
     int running;
+    int scene;
 };
 
 extern GameVar gameVar;
