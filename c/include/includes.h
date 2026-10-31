@@ -11,10 +11,13 @@
 
 enum SceneName {TITLE, EDIT, RUN};
 enum Direction {LEFT, RIGHT, UP, DOWN};
+enum State {NORMAL, INPUT, ERASE};
 
+typedef struct Asset Asset;
 typedef struct UITitle UITitle;
 typedef struct UIEdit UIEdit;
 typedef struct UIRun UIRun;
 typedef struct GameVar GameVar;
+typedef struct Entity Entity;
 
 #endif

@@ -1,4 +1,5 @@
 #include "scene.h"
+#include "asset.h"
 #include "ui.h"
 #include "gamevar.h"
 #include "render.h"
@@ -17,6 +18,8 @@ void sceneTitleRender(GameVar* gameVar) {
     renderDrawText("Edit", uiTitle.textEdit, 20, BLACK);
     renderDrawRect(uiTitle.buttonQuit, PINK);
     renderDrawText("Quit", uiTitle.textQuit, 20, BLACK);
+
+    DrawTexture(asset.texture[I_PLAY], 400, 20, WHITE);
 }
 
 void sceneTitleKeyDown(GameVar* gameVar) {

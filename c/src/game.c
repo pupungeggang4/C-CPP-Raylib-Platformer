@@ -1,4 +1,5 @@
 #include "game.h"
+#include "asset.h"
 #include "gamevar.h"
 #include "scene.h"
 
@@ -13,10 +14,13 @@ void gameInit(GameVar* gameVar) {
 
     SetExitKey(KEY_GRAVE);
     
+    assetLoad(&asset);
     gameVar->running = 1;
 }
 
 void gameLoop(GameVar* gameVar) {
+    gameVar->delta = GetFrameTime();
+
     gameInputHandle(gameVar);
 
     if (gameVar->scene == TITLE) {
